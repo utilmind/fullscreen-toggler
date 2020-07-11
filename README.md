@@ -14,8 +14,8 @@ HTML
 
 JavaScript
 
-    var $fullScreTogglerd = $(".toggle-fullscreen");
-    $fullScreTogglerd.click(function(e) {
+    var $fullScreTogglers = $(".toggle-fullscreen");
+    $fullScreTogglers.click(function(e) {
         e.preventDefault(); // in case if toggler is an anchor
         toggleFullScreen(function(isFullScreen) {
             $fullScreTogglers.find("img").attr("src", isFullScreen ? "images/compress.svg" : "images/expand.svg");
