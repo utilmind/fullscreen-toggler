@@ -1,7 +1,7 @@
 # fullscreen-toggler
 JavaScript function which toggle the full screen and monitors current full screen state triggering callback on change of fullscreen state.
 
-Live demo: http://utilmind.com/demos/2020/fullscreen-toggler/
+<b>Live demo:</b> http://utilmind.com/demos/2020/fullscreen-toggler/
 
 <h3>Usage example</h3>
 
