@@ -16,11 +16,11 @@
 
     JavaScript
 
-        var $fullScreTogglers = $(".toggle-fullscreen");
-        $fullScreTogglers.click(function(e) {
+        var $fullScreenTogglers = $(".toggle-fullscreen");
+        $fullScreenTogglers.click(function(e) {
             e.preventDefault(); // in case if toggler is an anchor
             toggleFullScreen(function(isFullScreen) {
-                $fullScreTogglers.find("img").attr("src", isFullScreen ? "images/compress.svg" : "images/expand.svg");
+                $fullScreenTogglers.find("img").attr("src", isFullScreen ? "images/compress.svg" : "images/expand.svg");
             });
         });
 
