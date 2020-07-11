@@ -5,11 +5,11 @@ JavaScript function which toggle the full screen and monitors current full scree
 
 HTML
 
-<code>
+<pre>
 &lt;button class="btn btn-primary toggle-fullscreen" title="Full screen" data-toggle="tooltip"&gt;
     &lt;img src="images/expand.svg" alt="Full screen" /&gt;
 &lt;/button&gt;
-</code>
+</pre>
 
 
 JavaScript
