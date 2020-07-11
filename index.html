@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FullScreen toggler demo</title>
+
+  <!-- angular -->
+  <script defer src="js/fullscreen.js"></script>
+</head>
+
+<body>
+<p>toggleFullScreen() is a JavaScript function which toggle the full screen and monitors current full screen state triggering callback on change of fullscreen state.</p>
+
+<h3>Usage example</h3>
+
+HTML
+
+<pre>
+&lt;button class="toggle-fullscreen" title="Full screen" data-toggle="tooltip"&gt;
+    &lt;img src="images/expand.svg" alt="Full screen" /&gt;
+&lt;/button&gt;
+</pre>
+
+
+JavaScript
+<pre>
+    var $fullScreenTogglers = $(".toggle-fullscreen");
+    $fullScreenTogglers.click(function(e) {
+        e.preventDefault(); // in case if toggler is an anchor
+        toggleFullScreen(function(isFullScreen) {
+            $fullScreenTogglers.find("img").attr("src", isFullScreen ? "images/compress.svg" : "images/expand.svg");
+        });
+    });
+</pre>
+
+<p>NOTE: This quick example uses jQuery. But the function itself written in vanilla JavaScript, so jQuery doesn't required.</p>
+
+<h1>DEMO</h1>
+<p>Click button below to toggle full screen mode</p>
+
+<blockquote>
+  <button class="toggle-fullscreen"><img src="images/expand.svg" width="48" height="48" style="padding: 8px" /></button>
+</blockquote>
+
+<!-- jQuery does not required. Used only for demo! -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+// <![CDATA[
+    var $fullScreenTogglers = $(".toggle-fullscreen");
+    $fullScreenTogglers.click(function(e) {
+        e.preventDefault(); // in case if toggler is an anchor
+        toggleFullScreen(function(isFullScreen) {
+            $fullScreenTogglers.find("img").attr("src", isFullScreen ? "images/compress.svg" : "images/expand.svg");
+        });
+    });
+// ]]>
+</script>
+
+</body>
+</html>
