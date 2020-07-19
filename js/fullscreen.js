@@ -50,7 +50,7 @@ function toggleFullScreen(onToggle) {
                   me._isInFullScr = curFullScreen;
                   onToggle(curFullScreen);
                 }
-            }, 0);
+            }, 50);
         },
 
         isFullScreen;
