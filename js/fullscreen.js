@@ -61,8 +61,7 @@ function toggleFullScreen(onToggle) {
     else
       requestFullScreen.call(docEl);
 
-    // in the end of process
-    setTimeout(function() {
+    //setTimeout(function() { / in the end of process
         if (onToggle) {
           if ("undefined" === typeof me._isInFullScr) { // first time
             checkFullScreen(); // first toggle before hooked resize event!
@@ -71,5 +70,5 @@ function toggleFullScreen(onToggle) {
             });
           }
         }
-    }, 0);
+    //}, 0);
 }
